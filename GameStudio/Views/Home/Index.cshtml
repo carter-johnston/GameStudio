@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="align-baseline"></div>
+<div class="px-10 pt-3 my-3 text-center border-bottom">
+    <h3 class="display-3">Completely Adequette Creations Game Studios™</h3>
+    <div class="col-lg-8 mx-auto">
+        <p class="lead mb-4">Completely adequette games for completely adequette people!</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <button type="button" class="btn-outline-secondary btn-lg px-4 me-sm-3" onclick="location.href='@Url.Action("List", "Product")'">BROWSE OUR CREATIONS</button>
+        </div>
+        <h1 class="display-4">Featured Products</h1>
+        <a class="btn btn-block" asp-area="" asp-controller="Product" asp-action="List">
+            <div class="p-5 mb-4 bg-light rounded-3">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <img src="~/Resources/Pictures/game1.png" class="img-fluid border rounded-3 shadow-lg mb-3" alt="Example image" width="1000" height="1000" loading="lazy" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                        <div class="card-body">
+                            <strong>Wonderous Worlds</strong>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <img src="~/Resources/Pictures/game1.png" class="img-fluid border rounded-3 shadow-lg mb-3" alt="Example image" width="1000" height="1000" loading="lazy" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                        <div class="card-body">
+                            <strong>Wonderous Worlds</strong>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <img src="~/Resources/Pictures/game1.png" class="img-fluid border rounded-3 shadow-lg mb-3" alt="Example image" width="1000" height="1000" loading="lazy" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                        <div class="card-body">
+                            <strong>Wonderous Worlds</strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+

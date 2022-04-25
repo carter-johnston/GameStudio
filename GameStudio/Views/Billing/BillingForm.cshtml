@@ -1,0 +1,39 @@
+﻿@model GameStudio.Models.CreditCard
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RsvpForm</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header text-center"><h4>Billing Information</h4></div>
+            <div class="card-body">
+                <form asp-action="BillingForm" method="post">
+                    <p>
+                        <label class="" asp-for="CardNumber">Account Number:</label>
+                        <input asp-for="CardNumber" />
+                    </p>
+                    <p>
+                        <label asp-for="CardExpiration">Your Expiration Date:</label>
+                        <input asp-for="CardExpiration" />
+                    </p>
+                    <p>
+                        <label>Card type:</label>
+                        <select asp-for="CardType">
+                            <option value="">Choose an option</option>
+                            <option value="Credit">Credit</option>
+                            <option value="Debit">Debit</option>
+                            <option value="PayPal">PayPal</option>
+                        </select>
+                    </p>
+                    <button type="submit">Submit Billing Information</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
